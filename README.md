@@ -15,7 +15,6 @@
 </p>
 <p align='center'>
     <img src="https://img.shields.io/badge/DISCLAIMER-purple?style=for-the-badge;"></img>
-</p>
 #### DOSMAX
 - DOSMAX allow you to start a dos attack on servers using their IPs
 - you can simply type the ip adress of the server and then press enter
