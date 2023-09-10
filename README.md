@@ -15,14 +15,16 @@
 </p>
 <p align='center'>
     <img src="https://img.shields.io/badge/DISCLAIMER-purple?style=for-the-badge;"></img>
+
 #### DOSMAX
 - DOSMAX allow you to start a dos attack on servers using their IPs
 - you can simply type the ip adress of the server and then press enter
 - to exit the tool press enter without writing nothing or Ctrl+C in the IP input
 #### ADVENTAGES
 - **`high-level dos attack`**
-- > **`1`** high volume of trafique reqeusts.
-- > **`2`** amplification.
+- > **`1`** high volume of trafique reqeusts
+- > **`2`** amplification
+- > **`3`** threading
 #### INSTALLATION
 - **`Windows`**
 - > **`1`** download and install git for windows from the original git website <a href='https://gitforwindows.org/'>download</a>
@@ -42,7 +44,7 @@ git clone https://github.com/7AXEL/DOSMAX
 #### RUN
 - **`Window & Linux`**
 ```
-cd IPEG
+cd DOSMAX
 python dosmax.py
 ```
 #### PLATFORMS
