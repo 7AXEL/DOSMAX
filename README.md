@@ -42,7 +42,7 @@ apt install git python
 git clone https://github.com/7AXEL/DOSMAX
 ```
 #### RUN
-- **`Window & Linux`**
+- **`Windows & Linux`**
 ```
 cd DOSMAX
 python dosmax.py
