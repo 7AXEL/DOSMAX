@@ -1,6 +1,29 @@
-from random import randint
 from os import system
-from sys import platform
+from sys import platform, argv
+
+try:
+   if argv[1] in ['--global', '-G'] and platform == 'linux':
+      with open('dosmax.py') as file:
+         lines = file.readlines()
+         code = '#!/usr/bin/python3\n'
+         for i in range(3):
+            code += lines[i]
+         for i in range(26, len(lines)):
+            code += lines[i]
+         file.close()
+      with open('dosmax', 'w') as file:
+         file.write(code)
+         file.close()
+      system('chmod +x dosmax;dos2unix dosmax;sudo mv dosmax /bin')
+      print('\033[1;92m[ALERT] DOSMAX GLOBED !')
+      exit()
+   elif argv[1] in ['--version', '-V']:
+      print('Dosmax version 2.0')
+      exit()
+except:
+   exit()
+
+from random import randint
 from threading import Thread
 from time import sleep
 
@@ -81,3 +104,4 @@ def amplification():
 for i in range(101):
    Thread(target=volume).start()
    Thread(target=amplification).start()
+
