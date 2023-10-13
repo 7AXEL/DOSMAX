@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/badge/DOSMAX-bg?style=for-the-badge;"></img>
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/DOS ATTACK TOOL V1.0-orange?style=for-the-badge;"></img>
+  <img src="https://img.shields.io/badge/DOS ATTACK TOOL V2.0-orange?style=for-the-badge;"></img>
 </p>
 <p align='center'>
   <img src="https://img.shields.io/badge/Author-A.X.E.L-red?style=flat-square;"></img>
@@ -25,6 +25,23 @@
 - > **`1`** high volume of trafique reqeusts
 - > **`2`** amplification
 - > **`3`** threading
+#### ARGS
+- > **`1`** to call dosmax from anywhere in your linux terminal you can use:
+```
+python3 dosmax.py --global
+```
+or
+```
+python3 dosmax.py -G
+```
+- > **`2`** you can check the tool version using:
+```
+python3 dosmax.py --version
+```
+or
+```
+python3 dosmax.py -V
+```
 #### INSTALLATION
 - **`Windows`**
 - > **`1`** download and install git for windows from the original git website <a href='https://gitforwindows.org/'>download</a>
