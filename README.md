@@ -59,11 +59,17 @@ apt install git python
 git clone https://github.com/7AXEL/DOSMAX
 ```
 #### RUN
-- **`Windows & Linux`**
+- **`Windows`**
 ```
 cd DOSMAX
 python dosmax.py
 ```
+- **`Linux`**
+```
+cd DOSMAX
+sudo python dosmax.py
+```
+- > note that in linux dosmax always need superuser privilege, so make sure to run it with sudo
 #### PLATFORMS
 > Supported Platform : **`Windows`**, **`Ubuntu/Debian/Kali/Parrot/Arch Linux`**<br>
 <hr>
